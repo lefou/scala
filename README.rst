@@ -35,8 +35,17 @@ build script or user-created if needed.  This is not a complete listing. ::
    ---tools/                    Developer utilities.
 
 
+Part IIa. Building Scala with SBuild
+--------------------------------------------------------------------------------
 
-Part II. Building Scala with SABBUS
+This is an experimental setup to build Scala with SBuild from http://sbuild.tototec.de.
+
+Use ``sbuild -l`` to show a list of available targets.
+
+To just build all, that can be already build with SBuild use ``sbuild all``.
+
+
+Part IIb. Building Scala with SABBUS
 --------------------------------------------------------------------------------
 
 SABBUS is the name of the Ant build script used to compile Scala. It is mostly
