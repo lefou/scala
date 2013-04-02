@@ -4,7 +4,7 @@ import de.tototec.sbuild.ant._
 import de.tototec.sbuild.ant.tasks._
 import java.io.File
 
-@version("0.4.0")
+@version("0.4.0.9000")
 @classpath("mvn:org.apache.ant:ant:1.8.4")
 class SBuild(implicit _project: Project) {
 
@@ -27,6 +27,7 @@ class SBuild(implicit _project: Project) {
 
   val stagesToSkipIfDirExists: Seq[String] = Seq("locker")
 
+  // TODO: directly use publically available jars
   val starrCompilerCp = 
     "lib/scala-library.jar" ~ 
     "lib/scala-reflect.jar" ~ 
